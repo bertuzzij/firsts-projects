@@ -22,6 +22,10 @@ public class ProductNew {
 
 	}
 	
+	public double getPrice() {
+		return price;
+	}
+	
 	public String getName() {
 		return name;
 	}
