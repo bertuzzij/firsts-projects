@@ -1,14 +1,15 @@
 package entities;
 
 public class Guest {
+	
     private String name;
-    private int room;
     private String email;
+    
 
-    public Guest(String name, int room, String email) {
+    public Guest(String name, String email) {
         this.name = name;
-        this.room = room;
         this.email = email;
+        
     }
 
     public String getName() {
@@ -17,14 +18,6 @@ public class Guest {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getRoom() {
-        return room;
-    }
-
-    public void setRoom(int room) {
-        this.room = room;
     }
 
     public String getEmail() {
@@ -37,10 +30,9 @@ public class Guest {
 
     public String toString(){
         return "Name: " + name
-                +"Email: "
-                +email
-                +"Room: "
-                +room;
+                +", "
+                +email;
+
     }
 
 }
